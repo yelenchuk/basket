@@ -3,6 +3,7 @@
 @import './base.scss';
 
 @import './blocks/header/header.scss';
+@import './blocks/authenticator/authenticator';
+@import './blocks/footer/footer';
+@import './blocks/account/account.sass';
 
-// Подключение нужных SCSS исходников Bootstrap 5
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
