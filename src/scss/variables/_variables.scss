@@ -5,4 +5,23 @@ $grey: #999999;
 $light-grey: #F4F4F4;
 $light-blue: #F2F5FD;
 
+// font variables
+$font-size-13: 13px;
 
+// Mixins
+@mixin block-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-center($dir) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+}
+
+@mixin font($weight, $font-size, $line-height) {
+    font-weight: $weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}

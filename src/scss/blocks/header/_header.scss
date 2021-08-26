@@ -1,13 +1,8 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-center(column);
 
   & .title {
-    font-weight: 900;
-    font-size: 54px;
-    line-height: 37px;
+    @include font(900, 54px, 37px);
     margin: 44px 119px 36px;
   }
 }
-

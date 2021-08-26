@@ -5,12 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Login</title>
   </head>
-  <body>
-    <section class="log_in"></section>
-    <section class="main"></section>
-    <div class="details"></div>
+  <body class="bg">
+    <div class="container">
+      <section class="header">
+        <h1 class="title">Basket</h1>
+        <div>
+          <img src="img/login/mobile-login.svg" alt="" />
+        </div>
+      </section>
+      <section class="auth">
+        <div class="sub-title">Log In</div>
+        <div class="desc">Please type your information</div>
+        <form action="#" class="auth__form">
+          <input
+            required
+            placeholder="Email Address"
+            name="email"
+            type="email"
+            class="auth__form-input"
+          />
+          <input
+            required
+            placeholder="Password"
+            name="password"
+            type="password"
+            class="auth__form-input"
+          />
+          <button class="btn_main">Log In</button>
+        </form>
+      </section>
+      <section class="footer">
+        <span>New user?</span> <a href="/signup.html">Create an Account</a>
+      </section>
+    </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>
