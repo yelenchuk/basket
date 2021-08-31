@@ -1,5 +1,5 @@
 .auth {
-    @include flex-cl-center(column);
+    @include flex-center(column);
 
     &__form {
         display: flex;

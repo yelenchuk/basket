@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700,900&display=swap&subset=cyrillic-ext');
+@import 'https://fonts.googleapis.com/css?family=Nunito:300,400,700,900&display=swap&subset=cyrillic-ext';
 @import './variables/variables';
 @import './base.scss';
 
-@import './blocks/header/header.scss';
+@import './blocks/header/header';
 @import './blocks/authenticator/authenticator';
 @import './blocks/footer/footer';
 @import './blocks/account/_account';
-
+@import './blocks/onboarding/onboarding';

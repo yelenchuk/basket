@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Onboarding</title>
+  </head>
+  <body class="bg">
+    <div class="container">
+      <section class="header">
+        <h1 class="title">Basket</h1>
+      </section>
+      <section class="onboarding">
+        <div class="onboarding__header">
+          <img src="/img/onboarding/basket_left.png" alt="" />
+          <img src="/img/onboarding/basket_right.png" alt="" />
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="/img/onboarding/cuate.svg" alt="" />
+              </div>
+              <div class="swiper-slide__title">Amazing Deals & Offers</div>
+              <div class="swiper-slide__desc">
+                Find deals that are cheaper than local supermarket, great
+                discount, and cash backs.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="/img/onboarding/bro.svg" alt="" />
+              </div>
+              <div class="swiper-slide__title">Everyday Fresh & Healthy</div>
+              <div class="swiper-slide__desc">
+                Quickly search and select a wide range of products from everyday
+                fresh and healthy grocery.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="/img/onboarding/amico.svg" alt="" />
+              </div>
+              <div class="swiper-slide__title">Deliver at Your Door</div>
+              <div class="swiper-slide__desc">
+                Safe and fast delivery for your valuable groceries at your door
+                without any hustle
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <button id="nextbtn" class="btn_main">Next</button>
+      </section>
+      <section class="onboarding__footer">
+        <a href="">Skip</a>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
