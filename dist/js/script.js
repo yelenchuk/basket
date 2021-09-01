@@ -90,11 +90,30 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-//const { query } = require("express");
-window.onload = function () {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/swiper */ "./src/js/modules/swiper.js");
+
+window.addEventListener('DOMContentLoaded', function () {
+  Object(_modules_swiper__WEBPACK_IMPORTED_MODULE_0__["default"])();
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/swiper.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/swiper.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function slider() {
+  // Swiper slider
   var swiper = new Swiper(".swiper", {
     pagination: {
       el: '.swiper-pagination'
@@ -102,16 +121,30 @@ window.onload = function () {
   });
   var nextBtn = document.querySelector("#nextbtn");
   nextBtn.addEventListener('click', function () {
-    console.log(swiper.activeIndex, nextBtn);
     swiper.activeIndex++;
+    changeButtonText();
     swiper.slideTo(swiper.activeIndex);
 
-    if (swiper.activeIndex == swiper.slides.length - 1) {
-      nextBtn.innerHTML = 'Let’s Get Started';
+    if (swiper.realIndex === swiper.slides.length - 1) {
       window.location.href = "/main.html";
     }
   });
-};
+  swiper.on('slideChange', function () {
+    changeButtonText();
+  });
+
+  function changeButtonText() {
+    console.log(swiper.activeIndex, swiper.realIndex);
+
+    if (swiper.activeIndex !== swiper.slides.length - 1) {
+      nextBtn.innerHTML = 'Next';
+    } else {
+      nextBtn.innerHTML = 'Let’s Get Started';
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (slider);
 
 /***/ })
 
