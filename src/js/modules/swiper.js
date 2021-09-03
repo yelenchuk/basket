@@ -29,10 +29,6 @@ function slider() {
             nextBtn.innerHTML = 'Let’s Get Started';
         }
     }
-
-
-
-
 }
 
 export default slider;

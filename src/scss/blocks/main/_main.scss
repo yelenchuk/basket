@@ -1,0 +1,149 @@
+.main {
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            @include font(700, 20px, 20px);
+            color: $grey;
+
+            & span {
+                @include font(900, 28px, 20px);
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                color: $primary;
+                margin-top: 14px;
+            }
+        }
+
+        &-avatar {
+            background: url(/img/main/avatar.jpeg), #C4C4C4;
+            @include block-size(60px, 60px);
+
+            &:after {
+                content: "";
+                position: absolute;
+                border: 1px solid #2F2E41;
+                box-sizing: border-box;
+                border-radius: 50px;
+                @include block-size(70px, 70px);
+                left: 77%;
+                top: 2%;
+            }
+        }
+    }
+
+    &__search {
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        &-input {
+            flex: 1;
+            border: none;
+            text-align: start;
+            margin-left: 20px;
+
+            &::placeholder {
+                @include font(normal, 13px, 20px);
+                color: $grey;
+            }
+
+            &:focus {
+                outline: none !important;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            border: 1px solid #EBEBEB;
+            width: 316px;
+            top: 18%;
+            left: 68px;
+        }
+    }
+
+    &__tabs {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+            /* for Chrome, Safari, and Opera */
+        }
+
+        &-item {
+            flex: 0 0 auto;
+            @include block-size(84px, 32px);
+            background: #F2F5FD;
+            border-radius: 10px;
+            @include font (600, 14px, 19px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+            margin-right: 16px;
+
+            &:hover {
+                color: $white;
+                background: $primary;
+            }
+        }
+    }
+
+    &__slider {
+        margin-top: 22px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &-slide {
+            flex: 0 0 auto;
+            @include block-size(330px, 148px);
+            background: url(/img/main/slide_first.jpeg),
+                #C4C4C4;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 16px;
+
+            & .slide {
+                &__wrapper {
+                    @include flex-center(column);
+                    padding-right: 28px;
+
+                    &-title {
+                        @include font (normal, 24px, 18px);
+                    }
+
+                    &-desc {
+                        @include font (normal, 18px, 18px);
+                        margin: 12px 0;
+                    }
+
+                    &-btn {
+                        @include block-size(109px, 35px);
+                        border-radius: 10px;
+                        border: none;
+                        background: $primary;
+                        @include font (bold, 14px, 18px);
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
