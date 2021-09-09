@@ -231,9 +231,12 @@
 
                             &__title {
                                 @include font(800, 16px, 18px);
-                                color: #181725;
                                 letter-spacing: 0.1px;
                                 margin: 20px 0;
+
+                                & a {
+                                    color: #181725;
+                                }
                             }
 
                             &__info {
@@ -286,7 +289,7 @@
         margin-bottom: 15px;
 
         &-item {
-            &:last-child {
+            &:hover {
                 background: #100F18;
                 border-radius: 10px;
                 @include block-size(40px, 40px);
