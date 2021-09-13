@@ -15,7 +15,7 @@
         &-slide {
             text-align: center;
 
-            @include flex-center(column);
+            @include flex-direction-center(column);
 
             /* Center slide text vertically */
             justify-content: center;

@@ -1,5 +1,5 @@
 .header {
-  @include flex-center(column);
+  @include flex-direction-center(column);
 
   & .title {
     @include font(900, 54px, 37px);

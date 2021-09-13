@@ -328,6 +328,7 @@ body .container {
 }
 .main__tabs-item {
   flex: 0 0 auto;
+  border: none;
   width: 84px;
   height: 32px;
   background: #F2F5FD;
@@ -338,7 +339,6 @@ body .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 auto;
   margin-right: 16px;
 }
 .main__tabs-item:hover {
@@ -454,6 +454,7 @@ body .container {
   padding: 18px 20px 25px 15px;
 }
 .main__bestselling-cards .cards__item-wrapper .wrapper__addBtn {
+  border: none;
   margin-left: auto;
   margin-right: 0;
   background-color: #2F2E41;
@@ -568,10 +569,8 @@ body .container {
   justify-content: space-evenly;
   align-items: center;
 }
-.details__header-actions .actions__number-minus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.details__header-actions .actions__number-action {
+  display: contents;
 }
 .details__header-actions .actions__number-amount {
   color: #fff;
@@ -651,30 +650,6 @@ body .container {
 .details__main-description .description__text a {
   color: #000000;
   text-decoration: revert;
-}
-.details__main__bottombar {
-  position: fixed;
-  bottom: 0;
-  width: 360px;
-  height: 75px;
-  background: #2F2E41;
-  border-radius: 10px;
-  margin: 0 auto;
-  left: 50%;
-  margin-left: calc(-360px / 2);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.details__main__bottombar-item:hover {
-  background: #100F18;
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .details__bottombar {
   position: fixed;

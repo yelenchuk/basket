@@ -8,7 +8,7 @@
         margin-top: 25px;
         display: flex;
         padding: 0 30px;
-        @include flex-center(column);
+        @include flex-direction-center(column);
 
         &-actions {
             display: flex;
@@ -21,9 +21,7 @@
                     @include block-size(36px, 36px);
                     border-radius: 10px;
                     background: $primary;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex-center-align;
 
                 }
 
@@ -35,11 +33,8 @@
                     justify-content: space-evenly;
                     align-items: center;
 
-                    &-minus {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
+                    &-action {
+                        display: contents;
                     }
 
                     &-amount {
@@ -91,9 +86,7 @@
 
             & .subtitle {
                 &__item {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex-center-align;
                     @include font(bold, 12px, 17px);
                     letter-spacing: -0.02em;
                     color: #2F2E41;
@@ -132,33 +125,6 @@
                     }
                 }
             }
-        }
-
-        &__bottombar {
-            position: fixed;
-            bottom: 0;
-            @include block-size(360px, 75px);
-            background: #2F2E41;
-            border-radius: 10px;
-            margin: 0 auto;
-            left: 50%;
-            margin-left: calc(-360px / 2);
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 15px;
-
-            &-item {
-                &:hover {
-                    background: #100F18;
-                    border-radius: 10px;
-                    @include block-size(40px, 40px);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-
         }
     }
 

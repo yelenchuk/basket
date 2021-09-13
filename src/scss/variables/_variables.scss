@@ -14,9 +14,15 @@ $font-size-13: 13px;
     height: $height;
 }
 
-@mixin flex-center($dir) {
+@mixin flex-direction-center($dir) {
     display: flex;
     flex-direction: $dir;
+    align-items: center;
+}
+
+@mixin flex-center-align {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 

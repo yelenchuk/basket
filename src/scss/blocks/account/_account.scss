@@ -1,5 +1,5 @@
 .account {
-    @include flex-center(column);
+    @include flex-direction-center(column);
 
     &__form {
         display: flex;
